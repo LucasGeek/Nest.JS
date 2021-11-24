@@ -24,7 +24,6 @@ export class AuthenticationService {
                 ...registrationData,
                 password: hashedPassword
             });
-            createdUser.password = undefined;
             return createdUser;
         } catch (error) {
             if (error?.code === PostgresErrorCode.UniqueViolation) {
@@ -38,7 +37,6 @@ export class AuthenticationService {
         try {
             const user = await this.userService.findEmail(email);
             await this.verifyPassword(plainTextPassword, user.password);
-            user.password = undefined;
             return user;
         } catch (error) {
             throw new HttpException('Wrong credentials provided', HttpStatus.BAD_REQUEST);

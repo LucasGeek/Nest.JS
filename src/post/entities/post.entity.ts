@@ -10,4 +10,7 @@ export class Post extends BaseEntity {
  
   @Column()
   public content: string;
+
+  @Column({ nullable: true })
+  public category?: string;
 }
