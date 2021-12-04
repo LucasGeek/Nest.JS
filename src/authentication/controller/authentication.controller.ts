@@ -11,7 +11,7 @@ import { Response } from 'express';
 export class AuthenticationController {
   constructor(
     private readonly authenticationService: AuthenticationService
-  ) { }
+  ) {}
 
   @UseGuards(JwtAuthenticationGuard)
   @Get()
