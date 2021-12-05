@@ -3,8 +3,8 @@ import { JwtAuthenticationGuard } from '../authentication/guard/jwt-authenticati
 import { PostService } from './post.service';
 import { CreatePostDto } from './dto/create-post.dto';
 import { UpdatePostDto } from './dto/update-post.dto';
-import { FindOneParams } from '../utils/findoneparams';
-import { RequestWithUser } from '../authentication/interface/requestwithuser.interface'
+import { FindOneParams } from '../utils/findOneParams';
+import { RequestWithUser } from '../authentication/interface/requestWithUser.interface'
 
 @Controller('post')
 export class PostController {

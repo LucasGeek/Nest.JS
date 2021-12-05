@@ -1,7 +1,7 @@
 import { Body, Res, Req, Controller, HttpCode, Get, Post, UseGuards, ClassSerializerInterceptor, UseInterceptors } from '@nestjs/common';
 import { AuthenticationService } from '../service/authentication.service';
 import { CreateUserDto } from '../../user/dto/create-user.dto';
-import { RequestWithUser } from '../interface/requestwithuser.interface';
+import { RequestWithUser } from '../interface/requestWithUser.interface';
 import { LocalAuthenticationGuard } from '../guard/local.authentication.guard';
 import { JwtAuthenticationGuard } from '../guard/jwt-authentication.guard';
 import { Response } from 'express';

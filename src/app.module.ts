@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ExceptionLoggerFilter } from './utils/exceptionlogger.filter';
+import { ExceptionLoggerFilter } from './utils/exceptionLogger.filter';
 import { APP_FILTER } from '@nestjs/core';
 
 import { PostModule } from './post/post.module';

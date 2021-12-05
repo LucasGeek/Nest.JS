@@ -3,7 +3,7 @@ import { JwtAuthenticationGuard } from '../authentication/guard/jwt-authenticati
 import { CategoryService } from './category.service';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
-import { FindOneParams } from '../utils/findoneparams';
+import { FindOneParams } from '../utils/findOneParams';
 
 @Controller('category')
 export class CategoryController {

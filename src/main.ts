@@ -1,7 +1,7 @@
 import { HttpAdapterHost, NestFactory, Reflector } from '@nestjs/core';
 import { AppModule } from './app.module';
 import * as cookieParser from 'cookie-parser';
-import { ExceptionLoggerFilter } from './utils/exceptionlogger.filter';
+import { ExceptionLoggerFilter } from './utils/exceptionLogger.filter';
 import { ClassSerializerInterceptor, ValidationPipe } from '@nestjs/common';
  
 async function bootstrap() {

@@ -5,7 +5,7 @@ import { Post } from './entities/post.entity';
 import { User } from '../user/entities/user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { PostNotFoundException } from './exception/postnotfound.exception'
+import { PostNotFoundException } from './exception/postNotFound.exception'
 
 
 @Injectable()
