@@ -8,6 +8,7 @@ import { DatabaseModule } from './database/database.module';
 import { UserModule } from './user/user.module';
 import { AuthenticationService } from './authentication/service/authentication.service';
 import { AuthenticationModule } from './authentication/authentication.module';
+import { CategoryModule } from './category/category.module';
 import * as Joi from '@hapi/joi';
 
 @Module({
@@ -28,6 +29,7 @@ import * as Joi from '@hapi/joi';
     PostModule,
     UserModule,
     AuthenticationModule,
+    CategoryModule,
   ],
   controllers: [],
   providers: [
